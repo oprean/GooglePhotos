@@ -1,45 +1,79 @@
 {
     "scenes": [
         {
-            "name":"random album",
+            "name": "random album",
+            "type": "album",
             "duration": 5,
-            "type":"album",
-            "albums":["a","b"],
-            "overlays":{
-                "album_title":1,
-                "photo_exif":1,
-                "photo_description":1,
-                "photo_date":1
-            }
+            "random": 1,
+            "remember": "week",
+            "favorites_only":0,
+            "show_album_title": 1,
+            "show_photo_exif": 1,
+            "show_photo_description": 1,
+            "show_photo_date": 1,            
+            "albums": [
+                "a",
+                "b"
+            ]
         },
         {
-            "name":"remember this",
-            "type":"filter",
+            "name": "remember this",
+            "type": "filter",
             "duration": 5,
-            "remember":"week",
-            "favorites_only":0
+            "random": 0,
+            "remember": "week",
+            "favorites_only": 1,
+            "show_album_title": 1,
+            "show_photo_exif": 1,
+            "show_photo_description": 1,
+            "show_photo_date": 1,            
+            "albums": []
+        },
+        {
+            "name": "test",
+            "type": "album"
+        },
+        {
+            "name": "favorites",
+            "type": "filter"
+        },
+        {
+            "name": "this month",
+            "type": "filter"
         }
     ],
     "program": [
         {
-            "from":"09:00",
-            "to":"10:00",
-            "scene":"random album"
+            "from": "09:00",
+            "to": "10:00",
+            "scene": "random album"
         },
         {
-            "from":"10:00",
-            "to":"11:00",
-            "scene":"remember this"
+            "from": "10:00",
+            "to": "11:00",
+            "scene": "remember this"
         },
         {
-            "from":"17:00",
-            "to":"19:00",
-            "scene":"remember this"
+            "from": "17:00",
+            "to": "19:00",
+            "scene": "remember this"
         }
     ],
-    "sources":
-    {
-        "remember":["week","day","month"],
-        "overlays":["Title","Exif","Date","Description"]
+    "sources": {
+        "remember": [
+            "week",
+            "day",
+            "month"
+        ],
+        "type": [
+            "album",
+            "filter"
+        ],
+        "overlays": [
+            "Title",
+            "Exif",
+            "Date",
+            "Description"
+        ]
     }
 }

@@ -46,7 +46,6 @@ class GooglePhotos():
                             'CITYSCAPES','GARDENS','PEOPLE','SPORT'
                             'CRAFTS','HOLIDAYS','PERFORMANCES','TRAVEL',
                             'DOCUMENTS','HOUSES','PETS','UTILITY']
-        self.overlays = ['Title','Exif','Date','Description']
 
     def updateAlbums(self):
         token = None

@@ -5,6 +5,7 @@ from PIL import Image, ImageTk, ImageOps, ImageFont, ImageDraw
 import requests
 import time
 import os
+import random
 
 FONT_PATH = os.getcwd() + "\\Data/notoserif_bold_italic.ttf"
 
@@ -21,8 +22,6 @@ class MainFrame(customtkinter.CTkFrame):
         self.selectedAlbum = None
         self.selectedPhoto = None
 
-        #self.lblImage = customtkinter.CTkLabel(self, width=self.master.width, height=self.master.height).grid(row=0, column=0, sticky="wns")
-        #self.lblImage = customtkinter.CTkLabel(self, width=self.master.width, height=self.master.height)
         self.lblImage = tk.Label(self)
         self.lblImage.grid(row=0, column=0, columnspan=4, sticky="ewns")
         
@@ -31,6 +30,12 @@ class MainFrame(customtkinter.CTkFrame):
         btnToggleMenu = customtkinter.CTkButton(self, text="M", width=20, height=20, command=self.showSettingFrame_callback).place(x=10,y=10)
 
         self.after(3000, self.nextItem)
+
+    def setNextValues(self):
+        current = self.cfg.current
+        if current['type'] == "album":
+            albums = self.cfg.current['albums']
+            self.albumNo = random.randint(0,len(albums)-1)
 
     def nextItem(self):
         itemNo = self.itemNo + 1

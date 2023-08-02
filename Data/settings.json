@@ -5,29 +5,48 @@
             "type": "album",
             "duration": 5,
             "random": 1,
-            "favorites_only":0,
+            "remember": "week",
+            "favorites_only": 0,
+            "show_album_title": 1,
+            "show_photo_exif": 1,
+            "show_photo_description": 1,
+            "show_photo_date": 1,
             "albums": [
-                "a",
-                "b"
-            ],
-            "overlays": {
-                "album_title": 1,
-                "photo_exif": 1,
-                "photo_description": 1,
-                "photo_date": 1
-            }
+                "AOFW6EPvOoyegvp2XA7PXR7H_VrZZoi17hfmUURCrvyEEDK7RIPS31MOQa6TsR8W8VmGmVQXBSGo",
+                "AOFW6ENLpInrliMJmi5VB1zRETeEPFfH-IDUgr_PMonOAfJ4eZ4doaruoLOAbKmcRAlYPLL8oIk3",
+                "AOFW6EOKDwhCRseVivqr5r9pN9nd81eOs9heKD4AjJ8Cb9WyzchFO5TiNJNdgmP3eWygoEAjIY2G"
+            ]
         },
         {
             "name": "remember this",
             "type": "filter",
             "duration": 5,
             "random": 1,
-            "remember": "week",
-            "favorites_only": 0
+            "remember": "day",
+            "favorites_only": 1,
+            "show_album_title": 1,
+            "show_photo_exif": 1,
+            "show_photo_description": 1,
+            "show_photo_date": 1,
+            "albums": [
+                "AOFW6EPvOoyegvp2XA7PXR7H_VrZZoi17hfmUURCrvyEEDK7RIPS31MOQa6TsR8W8VmGmVQXBSGo",
+                "AOFW6EMlUF0r06wB1kShK6MSCGQp5hYkPbKtdTL0IQ2fKcvOvVV4kALm6t-aXf7RPh825SOKJDZ1",
+                "AOFW6ENLpInrliMJmi5VB1zRETeEPFfH-IDUgr_PMonOAfJ4eZ4doaruoLOAbKmcRAlYPLL8oIk3",
+                "AOFW6EPQU5eIozkrDp8zjDyDjpWjVyt5EQuprPysJHqbU6l_J-TypE9HNiFkKfTyQc6GeJm4y9Gb",
+                "AOFW6EOKDwhCRseVivqr5r9pN9nd81eOs9heKD4AjJ8Cb9WyzchFO5TiNJNdgmP3eWygoEAjIY2G",
+                "AOFW6EOEcK2nBJDvtZz4hql8QM-idXw-Fiju1mcMoUy0_UJhIVW-yhprsECXTJDuwsLrGIuyWld5"
+            ]
         },
         {
             "name": "test",
-            "type": "album"
+            "type": "album",
+            "albums": [
+                "AOFW6EPvOoyegvp2XA7PXR7H_VrZZoi17hfmUURCrvyEEDK7RIPS31MOQa6TsR8W8VmGmVQXBSGo",
+                "AOFW6EMlUF0r06wB1kShK6MSCGQp5hYkPbKtdTL0IQ2fKcvOvVV4kALm6t-aXf7RPh825SOKJDZ1",
+                "AOFW6ENLpInrliMJmi5VB1zRETeEPFfH-IDUgr_PMonOAfJ4eZ4doaruoLOAbKmcRAlYPLL8oIk3",
+                "AOFW6EPQU5eIozkrDp8zjDyDjpWjVyt5EQuprPysJHqbU6l_J-TypE9HNiFkKfTyQc6GeJm4y9Gb",
+                "AOFW6EOEcK2nBJDvtZz4hql8QM-idXw-Fiju1mcMoUy0_UJhIVW-yhprsECXTJDuwsLrGIuyWld5"
+            ]
         },
         {
             "name": "favorites",
@@ -35,7 +54,7 @@
         },
         {
             "name": "this month",
-            "type": "filter"
+            "type": "album"
         }
     ],
     "program": [
@@ -60,6 +79,10 @@
             "week",
             "day",
             "month"
+        ],
+        "type": [
+            "album",
+            "filter"
         ],
         "overlays": [
             "Title",
