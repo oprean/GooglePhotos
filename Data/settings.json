@@ -1,0 +1,71 @@
+{
+    "scenes": [
+        {
+            "name": "random album",
+            "type": "album",
+            "duration": 5,
+            "random": 1,
+            "favorites_only":0,
+            "albums": [
+                "a",
+                "b"
+            ],
+            "overlays": {
+                "album_title": 1,
+                "photo_exif": 1,
+                "photo_description": 1,
+                "photo_date": 1
+            }
+        },
+        {
+            "name": "remember this",
+            "type": "filter",
+            "duration": 5,
+            "random": 1,
+            "remember": "week",
+            "favorites_only": 0
+        },
+        {
+            "name": "test",
+            "type": "album"
+        },
+        {
+            "name": "favorites",
+            "type": "filter"
+        },
+        {
+            "name": "this month",
+            "type": "filter"
+        }
+    ],
+    "program": [
+        {
+            "from": "09:00",
+            "to": "10:00",
+            "scene": "random album"
+        },
+        {
+            "from": "10:00",
+            "to": "11:00",
+            "scene": "remember this"
+        },
+        {
+            "from": "17:00",
+            "to": "19:00",
+            "scene": "remember this"
+        }
+    ],
+    "sources": {
+        "remember": [
+            "week",
+            "day",
+            "month"
+        ],
+        "overlays": [
+            "Title",
+            "Exif",
+            "Date",
+            "Description"
+        ]
+    }
+}
